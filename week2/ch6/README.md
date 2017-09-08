@@ -65,11 +65,9 @@
 
 ## 6.3 객체와 반복문 
 > 단순 for문으론 모든 속성에 접근하기 힘든 점들을 향상된 포문(in을 이용)을 이용하여 쉽게 사용이 가능하다.
-<pre>
+>> in 없이 출력하기
+>><pre>
   <code>
-  
-    //before
-    
     var product = {
       name : "7D 건조망고",
       type : "당절임",
@@ -82,8 +80,11 @@
       output += `${keys[i]} : ${product[keys[i]]} \n`;
     }
     console.log(output)
-
-    //after
+  </code>
+</pre>
+>> in 을 이용하여 출력하기
+<pre>
+  <code>
     var product = {
       name : "7D 건조망고",
       type : "당절임",
